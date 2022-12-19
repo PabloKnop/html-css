@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            width: 1000px;
+            margin: auto;
+        }
+
+        header{
+            background-color: cadetblue;
+            border-style: solid;
+            margin: auto auto 10px auto;
+            margin-bottom: 
+     
+        }
+
+        nav {
+            background-color: rgb(204, 241, 245);
+            padding: 10px;
+    
+        }
+
+        nav > a{
+            margin: 75px;
+            
+        }
+
+    
+        
+        main{
+            border-style: solid;
+            padding: 10px;
+            
+        }
+
+        .secao1{
+            border-style: solid;
+            margin-right: 240px;
+
+        }
+
+        .artigo1{
+            border-style: solid;
+            margin: 10px;
+            width: 700px;
+            height: 300px;
+        }
+
+        .artigo2{
+            border-style: solid;
+            margin: 10px;
+            width: 700px;
+            height: 300px;
+        }
+
+
+        .complemento1{
+            margin-left: auto;
+            border-style: solid;
+            width: 150px;
+            height: 275px;
+        }
+
+        .complemento2{
+            border-style: solid;
+            width: 201px;
+            height: 800px;
+            margin-left: 750px;        
+        }
+
+        .artigo2 > h2{
+            display: inline-flex;
+            width: 70px;
+            margin: 0;
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>HEADER</h1>
+        <nav>
+         <a href="#">LINK</a>
+         <a href="#">LINK</a>
+         <a href="#">LINK</a>
+         <a href="#">LINK</a>
+         <a href="#">LINK</a>
+        </nav>
+    </header>   
+
+    <main>
+        <h2>main</h2>
+        <section class="secao1">
+
+               <h2>section</h2>
+            <article class="artigo1">
+               <h2>article</h2>
+            </article>
+
+            <article class="artigo2">
+                <h2>article</h2>
+                <aside class="complemento1"></aside>
+            </article>
+
+        </section>
+
+        <aside class="complemento2"></aside>
+
+    </main>
+
+    <footer>
+        <p>Este rodape foi feito pelo knoppet</p>
+    </footer>
+</body>
+</html>
