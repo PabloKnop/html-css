@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento Vertical</title>
+</head>
+<style>
+
+#conteiner{
+background-color: blue;
+height: 96vh;
+padding: 10px;
+background-image: url(imagens/target001.png);
+background-size: 100% 100%;
+position: relative;
+
+}
+
+#conteudo{
+background-color: chartreuse;
+height: 200px;
+width: 400px;
+background-image: url(imagens/target001.png);
+background-size: 100% 100%;
+position: absolute;
+left: 50%;
+top: 50%;
+
+transform: translate(-50%, -50%);
+
+}
+
+/*Para uma centralizaçãoverflow:
+    A BOX CONTEINER VAI RECEBER A BOX CONTEUDO, POR PADRÃO TODA BOX JA É 'RELATIVE' E PARA CONSEGUIRMOS MOVER UMA BOX DEVEMOS DECLARAR SUA POSIÇÃO COMO 'ABSOLUTE'.
+
+    (NOTE QUE A CONTEINER É FIXA E A CONTEUDO É MOVEL DENTRO DA CONTEINER)
+
+    DECLARANDO O VALOR 'ABSOLUTE' COSEGUIMOS USAR DUAS PROPRIEDAS IMPORTANTES
+    'LEFT' E 'TOP' (PODEMOS USAR PX OU % COMO VALOR)
+    
+    A BOX POR PADRÃO TOMA COMO BASE DE POSICIONAMENTO O CANTO SUPERIOR ESQUERDO
+
+    NO CASO ACIMA EU QUIS CENTRALIZAR O CONTEUDO DENTRO DA CONTEINAR E PERCEBI QUE O CANTO SUPERIOR ESQUERDO DA CONTEUDO CENTRALIZAVA NO CENTRO DA CONTEINER DEIXANDO MINHA IMAGEM VISUALMENTE DESCENTRALIZADA.
+    AS PROPRIEDADES 'LEFT' E 'TOP' NAO CONSEGUIRAM DAR CONTA DO TRABALHO SOZINHAS.
+
+    PARA CORRIGIR ESSE PROBLEMA FOI NECESSARIO USAR UM 'transform: translate(-50%, -50%);' PARA REALMENTE CENTRALIZAR A IMAGEM PERFEITAMENTE
+    
+    */
+</style>
+
+<body>
+    <section id="conteiner">
+        <article id="conteudo">
+
+        </article>
+    </section>
+</body>
+</html>
