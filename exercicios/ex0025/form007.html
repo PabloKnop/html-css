@@ -9,9 +9,44 @@
 <body>
     <form action="cadastro.php" method="post">
         
+        <div>
+            <label for="iestado">Estado</label>
+            <select name="estado" id="iestado" required>
+                    <option value="Null" selected></option>
+                    <optgroup label="Região Sudeste">
+                        <option value="MG">Minas Gerais</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="ES">Espírito Santo</option>
+                    </optgroup>
+            
+                    <optgroup label="Região Centro-Oeste">
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="GO">Goiás</option>
+                    </optgroup>
+            </select>
+        </div>
         
+
+
+        <div>
+            <label for="iprofissao">Profissão: </label>
+            <input type="text" name="profissão" id="iprofissao" list="listaprof" required>  
+            <datalist id="listaprof">
+                <option value="IV">Investidor</option>
+                <option value="TI">Técnico de informática</option>
+                <option value="DEV">Desenvolvedor</option>
+                <option value="ADM">Admnistrado </option>
+            </datalist>
+        </div>
         
-        
+        <div>
+            <label for="imsg">Sua mensagem: </label><br>
+            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+
+        </div>
+
         <p>
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
