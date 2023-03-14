@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    display: none;
+}
+
+html{
+    font-family: 'Courier New', Courier, monospace;
+    width: 100%;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+main > article > h2{
+    padding-bottom: 30px;
+}
